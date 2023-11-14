@@ -16,19 +16,26 @@ const DatePosts = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const { data, error } = await supabase.from("Posts").select();
+      const { data, error } = await supabase
+        .from("Posts")
+        .select()
+        .order("id", { ascending: false });
 
       if (error) {
         console.log("ERROR");
         setPosts(null);
       }
+
       if (data) {
-        setPosts(
-          data.sort(
-            (a, b) => parseFloat(b.created_at) - parseFloat(a.created_at)
-          )
-        );
+        setPosts(data);
       }
+      //   if (data) {
+      //     setPosts(
+      //       data.sort(
+      //         (a, b) => parseFloat(b.created_at) - parseFloat(a.created_at)
+      //       )
+      //     );
+      //   }
     };
 
     fetchData();
