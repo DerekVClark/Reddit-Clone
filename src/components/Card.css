@@ -1,0 +1,154 @@
+.Card {
+  border: 2px solid rgba(104, 104, 104, 0.497);
+  border-radius: 5px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100% auto;
+  height: 100% auto;
+  background-color: #1a1a1b;
+  padding-right: 2em;
+}
+
+.Card > .sections {
+  gap: 2em;
+}
+
+.page_link {
+  text-decoration: none;
+  color: white;
+}
+
+.Card:hover {
+  border: 2px solid rgb(171, 171, 171);
+}
+
+.comment {
+  border: none;
+  background-color: inherit;
+  height: 100%;
+}
+
+.delete {
+  border: none;
+  background-color: inherit;
+  color: rgb(199, 49, 49);
+}
+
+.card_buttons {
+  display: flex;
+  gap: 1em;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.comment:hover {
+  border-radius: 2px;
+  background-color: #575859;
+}
+
+.card_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  flex-wrap: wrap;
+  text-wrap: wrap;
+}
+
+.title {
+  color: white;
+  font-size: 24px;
+  width: 92%;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.author {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.description {
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 15px;
+}
+
+.likes {
+  gap: 0.2em;
+  padding: 2px 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(16, 16, 16, 0.687);
+  height: 100% auto;
+}
+
+.like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 1.2em;
+  border: none;
+  background-color: inherit;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.dislike {
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+.like:hover {
+  background-color: #575859;
+  color: rgb(255, 68, 0);
+}
+
+.dislike:hover {
+  background-color: #575859;
+  color: rgb(0, 123, 255);
+}
+
+.moreButton {
+  width: 30px;
+  float: right;
+}
+.moreButton:hover {
+  cursor: pointer;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  width: 200px;
+}
+
+.post_img {
+  width: 100%;
+  height: 100%;
+  margin-right: 1em;
+  max-width: 1000px;
+
+  aspect-ratio: auto;
+}
